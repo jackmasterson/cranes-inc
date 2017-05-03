@@ -57,7 +57,7 @@ var model = {
 		},
 		{
 			item: 'Search',
-			href: '../search.html',
+			href: '../cranes-inc/search.html',
 			id: ko.observable('about'),
 			par: 'Filler text'
 		},
