@@ -1,0 +1,186 @@
+* {
+		text-align: center;
+		vertical-align: middle;
+		list-style-type: none;
+		font-family: Open Sans;
+		margin: 0;
+}
+
+html {
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	background: black;
+  	color: white;
+}
+
+ul {
+	margin,
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #ccc;
+	cursor: pointer;
+}
+
+p {
+	margin: 7%;
+	font-size: 20px;
+}
+
+.head-div {
+	background: no-repeat fixed;
+	background-size: cover;
+	min-height: 100vh;
+	min-width: 100vw;
+	z-index: 4;
+}
+
+.shade {
+	position: absolute;
+	background-color: rgba(0,0,0,0.8);
+	z-index: 5;
+	height: 100vh;
+	width: 20vw;
+}
+
+.shade-two {
+	position: absolute;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 5;
+	height: 100vh;
+	width: 80vw;
+	left: 20vw;
+}
+
+.catchy {
+	margin-top: 10vh;
+	padding: 5%;
+}
+
+.hours {
+	margin-top: 7vh;
+}
+
+.contact-div {
+	margin-left: 0;
+	padding-left: 0;
+	margin-top: 15px;
+}
+
+.contact-li {
+	font-size: 10px;
+}
+
+.hours-ul {
+	padding: 0;
+	display: none;
+	display: inline-block;
+	display: none;
+}
+
+.hours-day {
+	font-style: italic;
+	margin-right: 3vw;
+
+}
+
+.hours-span {
+	font-style: none;
+}
+
+.coffee-img {
+	height: 200px;
+	width: 250px;
+	margin-left: 15px;
+}
+
+.head-header {
+	background: #ccc;
+}
+
+.head-img {
+	height: 50px;
+	width: 125px;
+	position: absolute;
+	right: 4vw;
+	top: 2vh;
+	z-index: 10;
+}
+
+.fold-div {
+	margin: 2%;
+}
+
+.head-nav-ul {
+	padding: 0;
+}
+
+.nav-div {
+	margin-top: 15vh;
+}
+
+
+.head-nav-li {
+	margin-top: 8vh;
+	font-size: 20px;
+}
+
+@media screen and (max-width: 800px) {
+	.head-nav-ul {
+		width: 100vw;
+	}
+
+	.head-nav-li {
+		display: inline-block;
+		text-align: center;
+		width: 15vw;
+	}
+
+	.nav-div {
+		margin-top: 0;
+		width: 100vw;
+    position: fixed;
+    bottom: 0;
+	}
+
+	.shade {
+		width: 0;
+	}
+
+	.shade-two {
+		width: 100vw;
+		left: 0;
+	}
+
+	.contact-div {
+		margin: 15px;
+	}
+}
+
+
+@media screen and (max-width: 650px) {
+	.coffee-img {
+		display: none;
+	}
+
+	.head-nav-ul {
+		width: 70vw;
+		position: fixed;
+		bottom: 20vw;
+		left: 12vw;
+	}
+
+	.head-nav-li {
+		width: 30vw;
+	}
+}
+
+@media screen and (max-width: 415px) {
+	.head-nav-ul {
+		bottom: 45vw;
+	}
+}

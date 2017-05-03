@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Rent Cranes NYC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+	  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="shade-two">
+    <h1 class="catchy">Need a Crane?</h1>
+    <img class="coffee-img" src="img/hardhat.png">
+    <h3 class="hours">We won't leave you hanging.</h3>
+    <div class="hours-ul" data-bind="foreach: model.genInfo.schedule">
+      <br>
+      <span class="hours-day" data-bind="text: day"></span>
+      <span class="hours-span" data-bind="text: hours"></span>
+    </div>
+  </div>
+  <div class="shade">
+    <img class="head-img" src="img/filler-logo.png">
+    <div class="nav-div">
+      <ul class="head-nav-ul" data-bind="foreach: model.nav">
+        <li class="head-nav-li">
+          <a target="_blank" data-bind="text: item, attr: { href: href }"></a>
+        </li>
+      </ul>
+      <ul class="contact-div" data-bind="foreach: model.contact">
+        <li class="contact-li" data-bind="text: email"></li>
+        <li class="contact-li" data-bind="text: phone"></li>
+        <li class="contact-li" data-bind="text: directions"></li>
+      </ul>
+    </div>
+  </div>
+  <div class="head-div"></div>
+
+  <script src="js/lib/knockout-3.2.0.js"></script>
+  <script src="js/lib/jquery.js"></script>
+  <script src="js/lib/jquery-ui.min.js"></script>
+  <script src="js/lib/chocolate/jquery.chocolate.js"></script>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
